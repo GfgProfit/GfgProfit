@@ -1,200 +1,186 @@
-<!--
-  GfgProfit / GitHub Profile README
-  Publish in the root of a PUBLIC repository named exactly: GfgProfit/GfgProfit
-  Private projects are described at a high level and are intentionally NOT linked.
-  Review the private-project section before making this README public.
--->
-
 <div align="center">
 
-# GfgProfit
+# Bogdan · GfgProfit
 
-### Game Systems · Graphics Programming · Engine Technology
+### Senior Unity Programmer
+**Game Systems · Graphics Programming · Engine Technology · Procedural Generation**
 
-**Hi, I'm Bogdan.** I build the systems behind games: rendering, asset pipelines,
-procedural worlds, gameplay architecture, and tools to measure what actually happens at runtime.
-
-*From C++/OpenGL and low-level experiments to large-scale Unity 6 HDRP projects.*
+I build more than gameplay scripts: **game systems, rendering technology, asset pipelines, procedural worlds, and developer tools**.
 
 <p>
-  <a href="https://github.com/GfgProfit/stalker_raid_into_darkness"><img alt="Current project: S.T.A.L.K.E.R. RVM" src="https://img.shields.io/badge/MAIN_PROJECT-S.T.A.L.K.E.R._RVM-46665B?style=for-the-badge" /></a>
-  <a href="https://github.com/GfgProfit?tab=repositories"><img alt="GitHub repositories" src="https://img.shields.io/badge/EXPLORE-MY_REPOSITORIES-24292F?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white">
+  <img alt="Unity 6" src="https://img.shields.io/badge/Unity_6-171717?style=for-the-badge&logo=unity&logoColor=white">
+  <img alt="HDRP" src="https://img.shields.io/badge/HDRP-Graphics-374151?style=for-the-badge">
+  <img alt="HLSL" src="https://img.shields.io/badge/HLSL-Shaders-4B5563?style=for-the-badge">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white">
+  <img alt="OpenGL" src="https://img.shields.io/badge/OpenGL-5586A4?style=for-the-badge&logo=opengl&logoColor=white">
 </p>
 
-<p>
-  <img alt="C Sharp" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white" />
-  <img alt="C Plus Plus" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-  <img alt="HLSL" src="https://img.shields.io/badge/HLSL-Shader_Programming-4B5563?style=flat-square" />
-  <img alt="Unity" src="https://img.shields.io/badge/Unity_6-000000?style=flat-square&logo=unity&logoColor=white" />
-  <img alt="HDRP" src="https://img.shields.io/badge/HDRP-Rendering-374151?style=flat-square" />
-  <img alt="OpenGL" src="https://img.shields.io/badge/OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white" />
-</p>
-
-**[Current project](#-featured-project)** · **[Skills](#-what-i-work-on)** · **[Projects](#-other-projects)** · **[Русский](#-на-русском)**
+**[Technical Skills](#technical-skills)** · **[Projects](#selected-projects)** · **[Engineering Mindset](#engineering-mindset)** · **[Русский](#на-русском)**
 
 </div>
 
 ---
 
-## ☢️ Featured project
+## About me
 
-### [S.T.A.L.K.E.R.: Рейд во Мрак / Raid into Darkness](https://github.com/GfgProfit/stalker_raid_into_darkness)
+I'm a **Senior Unity Programmer** specializing in technically demanding game-development systems.
 
-**Active development · Public repository · Unity 6 · HDRP · C# · HLSL**
+My experience goes beyond assembling scenes and components. I work with **C# architecture, real-time rendering, HLSL shaders, binary asset formats, content pipelines, procedural generation, gameplay simulation, runtime performance, and engine tooling**.
 
-An **unofficial, independent port** of a heavily modified S.T.A.L.K.E.R.: Anomaly / X-Ray Monolith setup to Unity 6 HDRP. This is not X-Ray embedded inside Unity: the engine-facing systems and tooling are being reimplemented around a new C# architecture.
+I also have a background in **C++/OpenGL engine programming** and earlier **low-level bootloader/OS experiments**. Understanding how a system works underneath the abstraction is a big part of how I approach engineering.
 
-What is already part of the project:
+## Technical skills
 
-- **X-Ray compatibility tooling:** import pipelines for OGF, OMF, ANM, texture/material metadata and level data; source resolution across Mod Organizer 2 profiles and mod priorities.
-- **Custom rendering:** HDRP material/shader work in HLSL, PBR workflows, normal/TBN handling, specialized visuals, instancing, weather and environmental lighting.
-- **Gameplay foundations:** first-person systems, weapons and ballistics, optics/reticles, inventory and equipment, anomaly logic and effects.
-- **Engineering infrastructure:** Editor tools, reproducible benchmarks, regression checks and performance investigations in both Editor and Player builds.
+### 🎮 Unity & C# engineering
 
-> The port is **in progress**, not a finished playable replacement for the original game. This is an **unofficial fan project**, not affiliated with GSC Game World.
+- **Unity 6 and HDRP:** gameplay/runtime programming, component lifecycles, assets, prefabs, scene integration, ScriptableObjects and editor workflows.
+- **Software architecture:** modular assemblies, clear subsystem responsibilities, interface-driven integrations, and separation between core logic and Unity-specific code.
+- **Data-driven gameplay:** reusable definitions, runtime instances, identifiers, configuration, serialization, save/load flows, and validation.
+- **Simulation and presentation separation:** independent gameplay state, behavior rules, visual/audio responses, and interactions between them.
+- **State management:** state transitions, deterministic operations where appropriate, explicit error reporting, and persistence of gameplay data.
+- **Reusable game modules:** components and systems that can be integrated across features without becoming tightly coupled to a single scene.
 
-**[Explore the source and technical documentation →](https://github.com/GfgProfit/stalker_raid_into_darkness)**
+### 🎨 Real-time rendering & HLSL
+
+- **Custom shader programming:** HLSL shaders and custom material implementations for Unity's High Definition Render Pipeline.
+- **Physically based shading:** BRDF concepts, GGX/Burley models, roughness, metallic response, normal mapping, and material-light interactions.
+- **Material and texture processing:** texture channel packing, tangent-space normal reconstruction, TBN handling, PBR conversion, and compatibility with external engine material data.
+- **GPU-oriented rendering:** instancing, render-data preparation, matrix history, renderer batching considerations, and CPU/GPU workload analysis.
+- **Optical rendering:** render-texture-based rifle scopes, variable magnification, focal-plane reticles, and SDF/MSDF rendering techniques.
+- **Environmental visuals:** sky and weather integration, time-of-day transitions, cubemaps, lighting profiles, and atmospheric presentation.
+- **Effects:** specialized shader-driven visuals, particle systems, Shader Graph, Visual Effect Graph, and effect-update optimization.
+
+### 🧩 Game systems & simulation
+
+- **FPS gameplay:** first-person controllers, cameras, movement, interactions, weapon systems and aiming behavior.
+- **Weapons and ballistics:** shooting logic, impact processing, optics integration, and weapon-related state.
+- **Inventory and equipment:** grid-based inventories, equipment slots, item data, stack operations, drag-and-drop interactions, and runtime item state.
+- **Reliable item operations:** transfer/move/split/equip operations, slot constraints, validation, and atomic transactions.
+- **Character and environmental interactions:** health/condition integration, physical reactions, anomaly-style gameplay effects, activation logic, and timed responses.
+- **Wave-based gameplay:** enemy waves, combat progression, score/economy systems, and unlockable areas.
+- **UI systems:** Unity uGUI, TextMeshPro, Input System integration, procedural grid layouts, custom equipment interfaces, and generated item icons.
+
+### 🛠️ Engine tooling & content pipelines
+
+- **Unity Editor tooling:** custom editor windows, inspectors, asset processors, diagnostics, validation utilities, and content-management workflows.
+- **Binary format interpretation:** reading structured game data, building format-specific parsers, and translating foreign-engine representations into Unity.
+- **X-Ray/Monolith interoperability:** experience with OGF, OMF, ANM, DDS, THM, LTX, geometry, skeletal animation, texture metadata and level resources.
+- **Model and animation conversion:** mesh attributes, UVs, skinning, skeleton hierarchies, bind poses, animation data and runtime compatibility.
+- **Texture conversion:** DDS formats, normal-map reconstruction, texture semantics, and HDRP material generation.
+- **Mod-aware resource resolution:** Mod Organizer 2 profiles, mod priority rules, file conflicts, virtual resource selection and source traceability.
+- **Import reliability:** predictable asset dependencies, reimport consistency, structured diagnostics and automated validation.
+- **Tool architecture:** independent parsing logic, source management, asset generation, runtime consumers and dedicated tests.
+
+### 🌍 Procedural generation & large worlds
+
+- **Deterministic world generation:** seed-based generation, reproducible world layouts and stable world-space placement.
+- **Terrain generation:** heightmaps, terrain shaping, biomes, environmental distribution and large-area terrain workflows.
+- **World composition:** settlements, cities, points of interest, roads and rules for distributing content across environments.
+- **Procedural networks:** road layouts, connectivity, routing/pathfinding concepts and spatial constraints.
+- **Mesh generation:** procedurally constructed geometry and volumetric/field-based techniques, including Marching Cubes.
+- **Runtime world management:** chunks, streaming, caching, visibility/culling and scene population.
+- **Performance-aware generation:** large-world memory behavior, allocation control, and parallelization with Unity Jobs/Burst where appropriate.
+- **Scale:** experience testing procedural worlds at approximately **10 × 10 km**.
+
+### 📊 Performance engineering & diagnostics
+
+- **Unity Profiler and profiling APIs:** CPU timings, ProfilerRecorder counters, managed allocations, frame metrics and rendering diagnostics.
+- **Frame-time analysis:** frame pacing, percentile distributions, spikes, present timing and the distinction between throughput and consistency.
+- **Controlled benchmarks:** repeatable camera scenarios, warmup phases, Editor/Player comparisons and machine-readable measurement reports.
+- **A/B experiments:** baseline/candidate comparisons, unchanged-binary controls, regression detection and verification of measured improvements.
+- **Rendering optimization:** instancing strategies, batching experiments, matrix processing and reducing redundant work.
+- **Runtime optimization:** particle-frame caching, update-loop costs, memory allocations and component-level bottleneck identification.
+- **Platform-specific debugging:** Unity Player builds, D3D11/D3D12 comparisons and investigation of HDRP or graphics-related assertions.
+- **Evidence-based decisions:** profiling before optimizing, preserving reproducible test conditions and reporting limitations of collected metrics.
+
+### ⚙️ C++, graphics APIs & low-level programming
+
+- **C++:** earlier custom game-engine development and systems-level experiments.
+- **OpenGL:** graphics programming, rendering fundamentals and engine-side rendering abstractions.
+- **Computer architecture fundamentals:** memory, binary representations, boot processes, hardware-facing code and storage access.
+- **Bootloader/OS experiments:** a bootloader and experimental kernel functionality, including work with disk-sector reading.
+- **Cross-engine reasoning:** understanding how engine abstractions relate to file formats, rendering, data structures and lower-level execution.
+
+### 🧪 Testing, tooling & team practices
+
+- **Automated testing:** Unity EditMode/PlayMode checks, importer validation, regression suites and scenario-based verification.
+- **Version control:** Git, GitHub, Git LFS, meaningful commits and traceable changes.
+- **Technical investigation:** profiling reports, reproduction steps, comparative experiments, debugging notes and architecture documentation.
+- **Team development:** experience as a **team lead / primary developer** on a game project, coordinating gameplay work with animation and UI/UX contributions.
+- **AI-assisted development:** using coding agents and local AI tools as implementation/research assistants while retaining architectural decision-making and verification.
 
 ---
 
-## 🧠 What I work on
+## Selected projects
 
-| Area | Hands-on experience |
-| :-- | :-- |
-| **Game systems** | C# architecture, FPS systems, weapons and ballistics, grid inventory, equipment, wave-based gameplay, state management, simulation/visual separation. |
-| **Rendering & shaders** | HLSL, Unity HDRP, PBR lighting/materials, TBN and normal mapping, GGX/Burley shading concepts, instanced rendering, optics and visual effects. |
-| **Engine & asset tooling** | Unity Editor scripting, binary-format parsing, custom asset importers, animations and skeletons, texture/material conversion, MO2-aware resource resolution. |
-| **Procedural generation** | Seed-based deterministic worlds, terrain and biomes, roads, cities, points of interest, placement rules, chunk streaming, culling and mesh generation. |
-| **Performance engineering** | CPU-side profiling, frame pacing investigations, allocation tracking, repeatable A/B benchmarks, regression tests and evidence-based optimization. |
-| **Lower-level programming** | Earlier C++/OpenGL engine work; experiments with bootloaders, OS-kernel fundamentals and direct disk-sector access. |
+### ☢️ [S.T.A.L.K.E.R.: Рейд во Мрак — Raid into Darkness](https://github.com/GfgProfit/stalker_raid_into_darkness)
+
+**Unity 6 · HDRP · C# · HLSL · Engine Interoperability**
+
+An independent, unofficial technical recreation of a heavily modified S.T.A.L.K.E.R.: Anomaly / X-Ray Monolith experience in Unity.
+
+The project showcases **engine interoperability, custom asset import pipelines, shader development, environment rendering, gameplay system architecture, editor tooling, and performance engineering**.
+
+### 🌍 WorldGeneration
+
+**Procedural Generation · Large Worlds · Terrain · Streaming**
+
+A standalone procedural-world technology project focused on **deterministic environments, biomes, terrain, settlements, roads, mesh generation, large-area rendering and runtime world management**.
+
+*Private repository.*
+
+### 🧟 Biohazard Protocol
+
+**Unity · C# · FPS · Wave-based Gameplay · Team Leadership**
+
+A zombie-survival wave shooter with combat, scoring, purchasing and map progression. **Team lead and primary developer**, working alongside animation and UI/UX contributors.
+
+*Private repository.*
+
+### 🎯 Nightfall
+
+**Unity · C# · FPS Gameplay**
+
+An earlier wave-based shooter project focused on gameplay systems and prototyping.
+
+*Private repository.*
+
+### More public repositories
+
+[**Tower-Defence**](https://github.com/GfgProfit/Tower-Defence) · [**White-Desolation**](https://github.com/GfgProfit/White-Desolation) · [**All public repositories**](https://github.com/GfgProfit?tab=repositories)
+
+---
+
+## Engineering mindset
+
+> **Understand the system. Design its boundaries. Measure its behavior. Verify the result.**
+
+I value **maintainable architecture, predictable data flows, reproducible testing, and real performance measurements**.
+
+I enjoy the problems where gameplay programming meets graphics, low-level formats, engine interoperability and large-scale runtime systems.
+
+---
+
+## На русском
 
 <details>
-<summary><b>🔬 Detailed technical toolbox</b></summary>
+<summary><b>Подробнее обо мне и моих навыках</b></summary>
 
-### Languages and core technologies
+Привет! Я **Богдан (GfgProfit)**, **Senior Unity Programmer**. Специализируюсь на технической разработке игр: архитектуре игровых систем, рендеринге, шейдерах, инструментах движка, процедурной генерации и оптимизации.
 
-- **C#** — primary language for game systems, editor extensions, importers and runtime tooling.
-- **C++** — earlier engine and low-level programming projects.
-- **HLSL** — custom shaders and rendering work in Unity HDRP.
-- **OpenGL** — graphics API experience from earlier engine experiments.
+**Мои основные компетенции:**
 
-### Unity / rendering
+- **Unity 6 / C# / HDRP:** архитектура игровых подсистем, разделение логики и представления, сериализация, Editor Tools, UI, инвентари, оружие, баллистика и игровые механики.
+- **HLSL и рендеринг:** собственные шейдеры, PBR, работа с нормалями и TBN, инстансинг, погодные и атмосферные эффекты, оптика и прицельные сетки.
+- **Импорт ресурсов и форматы движков:** OGF, OMF, ANM, DDS, THM, LTX, анимации и скелеты, интеграция с Unity Asset Pipeline, учёт приоритетов модов в MO2.
+- **Процедурные миры:** детерминированная генерация, рельеф, биомы, города и дороги, чанки, стриминг, меши и оптимизация больших пространств.
+- **Производительность:** Unity Profiler, FrameTimingManager, ProfilerRecorder, анализ времени кадра, контролируемые A/B-бенчмарки, регрессионные проверки и оптимизация CPU/рендера.
+- **C++ / OpenGL:** опыт работы над собственным экспериментальным игровым движком и графической подсистемой.
+- **Низкоуровневое программирование:** эксперименты с загрузчиком, ядром ОС, устройством памяти и чтением секторов диска.
+- **Командная работа:** опыт ведущего разработчика проекта с участием аниматора и UI/UX-дизайнера.
 
-- Unity 6, **High Definition Render Pipeline (HDRP)**, ScriptableObjects, Editor/asset workflows.
-- Shader development, PBR shading, textures and material pipelines, instancing, particles/VFX.
-- Visual Effect Graph, Shader Graph, Unity Input System, uGUI / TextMeshPro.
-- Model, rig, animation and content conversion from external engine formats.
-
-### Importing and format interoperability
-
-- X-Ray formats and metadata: **OGF, OMF, ANM, DDS, THM, LTX**, plus level/geometry/collision/detail data.
-- Import source resolution for **Mod Organizer 2**: active profiles, priorities and resource conflicts.
-- Reimport stability, dependency tracking, AssetDatabase integration and validation.
-
-### Procedural world technology
-
-- Deterministic seeds, terrain/biome generation, heightmaps and 16-bit terrain stamps.
-- Cities, roads, POIs, world-space placement, persistent IDs and chunk-independent results.
-- Mesh generation, **Marching Cubes**, chunk streaming and visibility/culling systems.
-- Unity **Jobs + Burst**, caching and runtime allocation analysis.
-
-### Testing and workflow
-
-- Unity EditMode/PlayMode tests, repeatable import checks and performance regressions.
-- Profiling and A/B comparisons with controlled Player builds; frame-time and GC-allocation analysis.
-- Git, GitHub, Git LFS, code reviews, technical reports and AI-assisted development workflows.
-
-</details>
-
----
-
-## 🌍 Other projects
-
-<table>
-  <tr>
-    <th align="left">Project</th>
-    <th align="left">Focus</th>
-    <th align="left">Availability</th>
-  </tr>
-  <tr>
-    <td><b>WorldGeneration</b></td>
-    <td>Large procedural worlds inspired by survival sandboxes: terrain, biomes, settlements, roads, deterministic generation, custom rendering and runtime streaming.</td>
-    <td>Private project</td>
-  </tr>
-  <tr>
-    <td><b>Biohazard Protocol</b></td>
-    <td>Wave-based zombie survival shooter; combat, score/economy mechanics and map progression. Served as team lead / primary developer.</td>
-    <td>Private project</td>
-  </tr>
-  <tr>
-    <td><b>Nightfall</b></td>
-    <td>Earlier wave-based shooter project and gameplay prototyping.</td>
-    <td>Private project</td>
-  </tr>
-  <tr>
-    <td><b>Tower-Defence</b></a></td>
-    <td>Earlier game-development project.</td>
-    <td>Private project</td>
-  </tr>
-  <tr>
-    <td><b>White-Desolation</b></a></td>
-    <td>Additional game-development repository.</td>
-    <td>Private project</td>
-  </tr>
-</table>
-
-<details>
-<summary><b>📈 A few engineering highlights</b></summary>
-
-- Built and tested **large procedural worlds (up to 10 × 10 km)**, including terrain, settlements, placement and streaming systems.
-- In a specific local **WorldGeneration Player benchmark**, observed approximately **280 FPS** with **0 B/frame managed GC allocations**. These are scenario- and hardware-dependent measurements, not a general performance guarantee.
-- Worked on measurable optimizations in RVM, including particle-frame caching, matrix-history handling, renderer batching experiments and frame-pacing investigations.
-- Used repeatable experiments and regression checks to distinguish code changes from unrelated measurement noise.
-
-</details>
-
----
-
-## 🛠️ How I approach engineering
-
-**Make it reproducible. Measure it. Then change it.**
-
-- Prefer clear **data, simulation and presentation boundaries** instead of tightly coupled scene logic.
-- Treat import pipelines as engineering systems: **determinism, traceability, idempotence and validation** matter.
-- Investigate frame-time problems with **profiles and controlled comparisons**, not just an FPS counter.
-- When porting older games, preserve the original behavior where practical while modernizing the implementation.
-- Use AI coding tools to accelerate research, reviews and implementation **without outsourcing architectural decisions or validation**.
-
-### Next on my roadmap *(planned, not shipped)*
-
-- Finish the S.T.A.L.K.E.R. port and continue stabilizing its rendering, game systems and performance.
-- Add **co-op multiplayer with Mirror** after the core single-player port.
-- Develop an **SDK and modding ecosystem** with configuration, extensibility and dedicated tooling.
-- Continue exploring custom AI/navigation and procedural character-animation systems.
-
----
-
-## 🇷🇺 На русском
-
-<details>
-<summary><b>Кто я и чем занимаюсь — кратко на русском</b></summary>
-
-Привет! Я **GfgProfit (Богдан)**. Разрабатываю игровые системы, графику, инструменты для движков и процедурные миры. Мне интереснее не просто собрать сцену, а разобраться, **как устроены её рендеринг, симуляция, импорт ресурсов и производительность**.
-
-**Мои основные направления:**
-
-- **C# / Unity 6 HDRP:** игровые системы, инвентарь, оружие, баллистика, аномалии, погода, редакторские инструменты.
-- **HLSL / графика:** собственные шейдеры, физически корректное освещение, материалы, инстансинг, спецэффекты и оптика.
-- **Импорт и совместимость:** бинарные форматы X-Ray (OGF/OMF/ANM и другие), ресурсы локаций, MO2, анимации и HDRP-материалы.
-- **Процедурная генерация:** большие миры, биомы, города, дороги, чанки, стриминг, Jobs/Burst и детерминированность.
-- **Оптимизация:** профилирование, диагностика времени кадра, контролируемые A/B-тесты, бенчмарки и регрессионные проверки.
-- **C++ / OpenGL / низкий уровень:** ранее занимался экспериментальным движком, загрузчиком и основами собственного ядра ОС.
-
-**Главный проект сейчас:** [S.T.A.L.K.E.R.: «Рейд во Мрак»](https://github.com/GfgProfit/stalker_raid_into_darkness) — перенос X-Ray/Monolith-сборки на Unity 6 HDRP с собственной архитектурой на C#.
-
-**Другие проекты:** WorldGeneration (процедурный генератор мира), Biohazard Protocol (волновой зомби-шутер; командная разработка), Nightfall (волновой шутер), а также небольшие публичные репозитории.
-
-**В планах, а не в списке готовых возможностей:** кооператив через Mirror, SDK, моддинг и расширенные системы AI/навигации.
+Мой подход — **разобраться в архитектуре, отделить данные и симуляцию от визуала, воспроизвести проблему, измерить её и только затем менять реализацию**.
 
 </details>
 
@@ -204,10 +190,6 @@ What is already part of the project:
 
 **I build systems, not just scenes.**
 
-<sub>Projects are always evolving. The source code and current progress speak louder than a wall of skill badges.</sub>
-
-<br />
-
-<a href="https://github.com/GfgProfit">GitHub profile</a> · <a href="https://github.com/GfgProfit/stalker_raid_into_darkness">S.T.A.L.K.E.R.: RVM</a>
+[GitHub](https://github.com/GfgProfit) · [S.T.A.L.K.E.R.: RVM](https://github.com/GfgProfit/stalker_raid_into_darkness)
 
 </div>
